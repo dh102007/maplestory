@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메이플스토리 캐릭터 조회</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>메이플스토리 캐릭터 조회</h1>
+    <form id="characterForm">
+        <label for="characterName">캐릭터 이름:</label>
+        <input type="text" id="characterName" name="characterName" required>
+        <label for="date">날짜:</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit">조회</button>
+    </form>
+    <div id="result" class="character-info"></div>
+    <div id="equipment" class="equipment-info"></div> <!-- 장비 아이템을 표시할 div 추가 -->
+    <div id="tooltip" class="tooltip"></div> <!-- 사용안하는 코드 지우면 에러발생 -->
+
+    <script src="script.js"></script>
+</body>
+</html>
